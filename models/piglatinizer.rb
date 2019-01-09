@@ -5,12 +5,13 @@ class PigLatinizer
     split = text.split(' ')
     split.each do |word|
       ray << turn_word(word)
-    end 
+    end
     ray.each do |word|
       final_text += "#{word} "
-    end 
-    final_text     
+    end
+    final_text
   end
+  
   def turn_word(word)
     turnt = [""]
     ph = 0
@@ -32,6 +33,7 @@ class PigLatinizer
     value = turnt.join
     value
   end
+  
   def is_cons(letter)
     bin = letter.scan(/[bcdfghjklmnpqrstvwxyz]/).count
     if bin == 0
