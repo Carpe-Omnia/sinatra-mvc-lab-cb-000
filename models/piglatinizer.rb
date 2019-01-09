@@ -10,11 +10,7 @@ class PigLatinizer
         ray << turn_word(word)
       end
       ray.each do |word|
-        if word != split[-1]
           final_text << "#{word} "
-        else
-          final_text << "#{word}"
-        end
       end
     end
   final_text
