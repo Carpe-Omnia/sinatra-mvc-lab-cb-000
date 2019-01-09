@@ -45,7 +45,7 @@ class PigLatinizer
   def first_vowel(word)
     ph = 0
     dex = 0
-    ray = word.split
+    ray = word.split('')
 
     ray.each do |letter|
       puts "#{letter} /n"
