@@ -7,9 +7,9 @@ class PigLatinizer
       ray << turn_word(word)
     end
     ray.each do |word|
-      final_text += "#{word} "
+      ray << "#{word} "
     end
-    final_text
+    final_text = ray.join( )
   end
 
   def turn_word(word)
