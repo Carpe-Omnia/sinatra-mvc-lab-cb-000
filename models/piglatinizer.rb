@@ -59,5 +59,5 @@ class PigLatinizer
 end
 porky = PigLatinizer.new
 test_dex = porky.first_vowel('straight')
-#puts test_dex 
-puts is_cons('t')
+#puts test_dex
+puts porky.is_cons('t')
