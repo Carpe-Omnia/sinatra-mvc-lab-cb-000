@@ -33,7 +33,7 @@ class PigLatinizer
   end
 
   def is_cons(letter)
-    bin = letter.scan(/[bcdfghjklmnpqrstvwxyz]/).count
+    bin = letter.downcase.scan(/[bcdfghjklmnpqrstvwxyz]/).count
     if bin == 0
       false
     else
