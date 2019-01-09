@@ -27,7 +27,7 @@ class PigLatinizer
           ph = 1
         end
       end
-      turnt[0] = word[dex..-1].join
+      turnt[0] = word[dex..-1]
       turnt << 'ay'
     end
     value = turnt.join
