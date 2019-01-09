@@ -7,12 +7,15 @@ class PigLatinizer
     final
   end
   def turn_word(word)
-    turnt = ""
+    turnt = [""]
     ph = 0
+    dex = 0
     if is_cons(word[0]) == false
-      turnt = word + "way"
+      turnt[0] = word + "way"
     else
-      
+      word.each do |letter|
+        if ph == 0 && is_cons(letter) == true
+          
 
   end
   def is_cons(letter)
