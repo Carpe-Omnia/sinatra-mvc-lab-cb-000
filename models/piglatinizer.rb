@@ -7,10 +7,12 @@ class PigLatinizer
     final
   end
   def turn_word(word)
+    turnt = ""
     if is_cons(word[0]) == false
       turnt = word + "way"
-    end 
-       
+    else 
+      
+
   end
   def is_cons(letter)
     bin = letter.scan(/[bcdfghjklmnpqrstvwxyz]/).count
