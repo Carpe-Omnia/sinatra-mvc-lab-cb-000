@@ -56,7 +56,3 @@ class PigLatinizer
   end
 
 end
-porky = PigLatinizer.new
-test_dex = porky.turn_word('bcdefg')
-puts test_dex
-#puts porky.is_cons('t')
