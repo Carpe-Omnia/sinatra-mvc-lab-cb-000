@@ -11,7 +11,7 @@ class PigLatinizer
     end
     final_text
   end
-  
+
   def turn_word(word)
     turnt = [""]
     ph = 0
@@ -19,7 +19,7 @@ class PigLatinizer
     if is_cons(word[0]) == false
       turnt[0] = word + "way"
     else
-      word.each do |letter|
+      word.split.each do |letter|
         if ph == 0 && is_cons(letter) == true
           turnt << letter
           dex += 1
@@ -27,13 +27,13 @@ class PigLatinizer
           ph = 1
         end
       end
-      turnt[0] = word[dex..-1]
+      turnt[0] = word[dex..-1].join
       turnt << 'ay'
     end
     value = turnt.join
     value
   end
-  
+
   def is_cons(letter)
     bin = letter.scan(/[bcdfghjklmnpqrstvwxyz]/).count
     if bin == 0
