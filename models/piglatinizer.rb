@@ -48,7 +48,6 @@ class PigLatinizer
     ray = word.split('')
 
     ray.each do |letter|
-      puts "#{letter} /n"
       if is_cons(letter) == true && ph == 0
         dex += 1
       else
@@ -61,5 +60,5 @@ class PigLatinizer
 end
 porky = PigLatinizer.new
 test_dex = porky.first_vowel('straight')
-#puts test_dex
-puts porky.is_cons('t')
+puts test_dex
+#puts porky.is_cons('t')
