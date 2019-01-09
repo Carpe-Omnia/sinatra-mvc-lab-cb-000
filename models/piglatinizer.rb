@@ -46,6 +46,7 @@ class PigLatinizer
     ph = 0
     dex = 0
     ray = word.split
+    puts ray
     ray.each do |letter|
       if is_cons(letter) == true && ph == 0
         dex += 1
