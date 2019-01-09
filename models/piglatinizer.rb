@@ -21,7 +21,7 @@ class PigLatinizer
     else
       word.split.each do |letter|
         if ph == 0 && is_cons(letter) == true
-          turnt << letter
+          #turnt << letter
           dex += 1
         else
           ph = 1
