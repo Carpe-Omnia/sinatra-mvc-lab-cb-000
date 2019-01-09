@@ -8,9 +8,10 @@ class PigLatinizer
   end
   def turn_word(word)
     turnt = ""
+    ph = 0
     if is_cons(word[0]) == false
       turnt = word + "way"
-    else 
+    else
       
 
   end
