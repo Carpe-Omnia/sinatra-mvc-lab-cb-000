@@ -13,7 +13,7 @@ class PigLatinizer
           final_text << "#{word} "
       end
     end
-  final_text
+  final_text.strip
   end
 
   def turn_word(word)
