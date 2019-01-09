@@ -21,6 +21,7 @@ class PigLatinizer
     else
       dex = first_vowel(word)
       turnt[0] = word[dex..-1]
+      turnt[1] = word[0..dex-1]
       turnt << 'ay'
     end
     value = turnt.join
