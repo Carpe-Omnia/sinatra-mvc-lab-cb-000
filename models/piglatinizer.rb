@@ -15,8 +15,17 @@ class PigLatinizer
     else
       word.each do |letter|
         if ph == 0 && is_cons(letter) == true
-          
-
+          turnt << letter
+          dex += 1
+        else
+          ph = 1
+        end
+      end
+      turnt[0] = word[dex..-1]
+      turnt << 'ay'
+    end
+    value = turnt.join
+    value
   end
   def is_cons(letter)
     bin = letter.scan(/[bcdfghjklmnpqrstvwxyz]/).count
