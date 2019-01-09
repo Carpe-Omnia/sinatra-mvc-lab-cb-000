@@ -21,7 +21,7 @@ class PigLatinizer
     else
       word.split.each do |letter|
         if ph == 0 && is_cons(letter) == true
-          turnt << letter
+          #turnt << letter
           dex += 1
         else
           ph = 1
@@ -42,6 +42,18 @@ class PigLatinizer
       true
     end
   end
-
+  def first_vowel(word)
+    ph = 0
+    dex = 0
+    ray = word.split
+    ray.each do |letter|
+      if is_cons(letter) == true && ph = 0
+        dex += 1
+      else
+        ph = 1
+      end
+    end
+    dex
+  end
 
 end
