@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   post '/piglatinize/' do
     Porky = PigLatinizer.new
-    @converted = Porky.piglatinize(params["input"])
+    @converted = Porky.piglatinize(params["user_phrase"])
     erb :display
   end
 
