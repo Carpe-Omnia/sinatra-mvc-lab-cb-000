@@ -19,7 +19,7 @@ class PigLatinizer
     if is_cons(word[0]) == false
       turnt[0] = word + "way"
     else
-      word.split.each do |letter|
+      word.split('').each do |letter|
         if ph == 0 && is_cons(letter) == true
           #turnt << letter
           dex += 1
