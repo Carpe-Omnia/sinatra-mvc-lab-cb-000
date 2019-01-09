@@ -19,14 +19,7 @@ class PigLatinizer
     if is_cons(word[0]) == false
       turnt[0] = word + "way"
     else
-      word.split('').each do |letter|
-        if ph == 0 && is_cons(letter) == true
-          #turnt << letter
-          dex += 1
-        else
-          ph = 1
-        end
-      end
+      dex = first_vowel(word)
       turnt[0] = word[dex..-1]
       turnt << 'ay'
     end
