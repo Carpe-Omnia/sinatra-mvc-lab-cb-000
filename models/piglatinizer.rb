@@ -3,13 +3,16 @@ class PigLatinizer
     ray = []
     final_text = ""
     split = text.split(' ')
-    split.each do |word|
-      ray << turn_word(word)
-    end
-    ray.each do |word|
-      final_text << "#{word}"
-    end
-    final_text
+    if split.size == 1
+      final_text = turn_word(text)
+    else
+      split.each do |word|
+        ray << turn_word(word)
+      end
+      ray.each do |word|
+        final_text << "#{word} "
+      end
+  final_text
   end
 
   def turn_word(word)
