@@ -48,7 +48,7 @@ class PigLatinizer
     ray = word.split
 
     ray.each do |letter|
-      puts letter
+      puts "#{letter} /n"
       if is_cons(letter) == true && ph == 0
         dex += 1
       else
