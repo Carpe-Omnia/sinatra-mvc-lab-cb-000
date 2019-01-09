@@ -12,7 +12,7 @@ class PigLatinizer
       ray.each do |word|
         final_text << "#{word} "
       end
-    end   
+    end
   final_text
   end
 
